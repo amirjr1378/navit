@@ -1,0 +1,50 @@
+.btn {
+    position: relative;
+    background: transparent;
+    color: var(--color-secondary);
+    text-align: center;
+    padding: 5px;
+    border-radius: 4px;
+    display: inline-block;
+    height: 50px;
+    line-height: 50px;
+    overflow: hidden;
+    padding: 10px 40px;
+    &.btn-block {
+        display: block;
+        width: 100%;
+    }
+    &.btn-round {
+        border-radius: 40px;
+    }
+
+    &.btn-square {
+        border-radius: 0;
+    }
+
+    &.btn--warning {
+        background-color: rgba(#ffa41b, 0.1);
+        color: var(--color-warning);
+    }
+
+    &.btn--primary {
+        background-color: var(--color-primary);
+        color: var(--color-whitish);
+    }
+    .btn__content {
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+    }
+    .btn__spinner {
+        position: absolute;
+        top: 10%;
+        left: 50%;
+        transform: translate(-50%);
+    }
+    .hidden {
+        visibility: hidden;
+    }
+}

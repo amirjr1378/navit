@@ -1,0 +1,79 @@
+// -----------------------------------------------------------------------------
+// This file contains all application-wide Sass variables.
+// -----------------------------------------------------------------------------
+/// Breakpoints map
+/// @prop {String} keys - Keys are identifiers mapped to a given length
+/// @prop {Map} values - Values are actual breakpoints expressed in pixels
+$breakpoints: (
+  "small": 320px,
+  "medium": 768px,
+  "large": 1024px
+) !default;
+
+$colors: (
+  text-color: rgb(34, 34, 34) /* Funny name though 😅 */,
+  base: #fff,
+  secondary: #999,
+  black: #141618,
+  primary: #23374d,
+  primary-text: #fff,
+  whitish: #eeeeee,
+  warning: #ffa41b,
+  important: #333333,
+  danger: #fa163f
+);
+
+$colors-dark: (
+  text-color: #fff,
+  base: #141618,
+  secondary: #2b2b2b,
+  warning: #ff5722
+);
+
+$navbar-height: 60px;
+
+// make css variables with scss variables this is usefull for dark mode
+:root {
+  @each $name, $color in $colors {
+    --color-#{$name}: #{$color};
+  }
+}
+/// Regular font family
+/// @type List
+$text-font-stack: "Roboto", "Open Sans", "Helvetica Neue Light",
+  "Helvetica Neue", "Helvetica", "Arial", sans-serif !default;
+
+/// Code (monospace) font family
+/// @type List
+$code-font-stack: "Courier New", "DejaVu Sans Mono", "Bitstream Vera Sans Mono",
+  "Monaco", monospace !default;
+
+/// Copy text color
+/// @type Color
+$text-color: rgb(34, 34, 34) !default;
+
+/// Main brand color
+/// @type Color
+$brand-color: rgb(229, 0, 80) !default;
+
+/// Light grey
+/// @type Color
+$light-grey: rgb(237, 237, 237) !default;
+
+/// Medium grey
+/// @type Color
+$mid-grey: rgb(153, 153, 153) !default;
+
+/// Dark grey
+/// @type Color
+$dark-grey: rgb(68, 68, 68) !default;
+
+/// Container's maximum width
+/// @type Length
+$max-width: 1180px !default;
+
+/// Relative or absolute URL where all assets are served from
+/// @type String
+/// @example scss - When using a CDN
+///   $base-url: 'http://cdn.example.com/assets/';
+$base-url: "http://lorempixel.com/400/200" !default;
