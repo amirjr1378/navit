@@ -1,5 +1,4 @@
 .input-container {
-    min-width: 360px;
     width: 100%;
     max-width: 100%;
     margin-top: 20px;
@@ -8,14 +7,12 @@
     .input__label {
         letter-spacing: -1px;
         font-weight: bold;
-        width: 36%;
         height: 27px;
-        line-height: 41px;
+        //line-height: 41px;
         position: absolute;
         top:-35px;
         left: 50%;
-        padding-left: 10px;
-        padding-right: 10px;
+        padding: 15px;
         transform: translateX(-50%);
         margin: 10px auto -20px;
         background: var(--color-base);

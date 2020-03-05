@@ -14,8 +14,10 @@ const initialValue = {
 
 function SignUp({ ...props }) {
     const [customerType, setCustomerType] = React.useState("real");
-    const toggle = type =>
-        type === "real" ? setCustomerType("legal") : setCustomerType("real");
+    const toggle = () => {
+        if (submitting) return
+        customerType === "real" ? setCustomerType("legal") : setCustomerType("real");
+    }
 
     const sendForm = async () => {
         await ajax.post("posts", form, { "content-type": "json" });
@@ -74,7 +76,7 @@ function SignUp({ ...props }) {
                         className="col"
                         color={customerType === "legal" ? "warning" : ""}
                         type="button"
-                        onClick={() => toggle("real")}
+                        onClick={toggle}
                     >
                         <div>
                             {customerType === "legal" && (
@@ -95,7 +97,7 @@ function SignUp({ ...props }) {
                         className="col"
                         color={customerType === "real" ? "warning" : ""}
                         type="button"
-                        onClick={() => toggle("legal")}
+                        onClick={toggle}
                     >
                         <div>
                             {customerType === "real" && (
