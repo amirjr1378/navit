@@ -13,12 +13,13 @@ $breakpoints: (
 $colors: (
   text-color: rgb(34, 34, 34),
   base: #fff,
-  secondary: #999,
+  secondary: rgba(0, 0, 0, 0.2),
   black: #141618,
-  primary: #23374d,
+  primary: #2e3c56,
   primary-text: #fff,
   whitish: #eeeeee,
-  warning: #ffa41b,
+  gray: #rgba(0, 0, 0, 0.6),
+  warning: #f78408,
   important: #333333,
   danger: #fa163f
 );

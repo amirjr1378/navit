@@ -5,7 +5,7 @@
     margin-bottom:10px;
     position: relative;
     .input__label {
-        letter-spacing: -1px;
+        letter-spacing: -0.42px;
         font-weight: bold;
         height: 27px;
         //line-height: 41px;
@@ -16,7 +16,7 @@
         transform: translateX(-50%);
         margin: 10px auto -20px;
         background: var(--color-base);
-        color: var(--color-important);
+        color: var(--color-gray);
         border: none;
         outline: none;
         z-index: 2;
@@ -31,7 +31,8 @@
         border-radius: 3px;
         border: 1px solid var(--color-secondary);
         outline: 0;
-        color: var(--color-secondary);
+        color: var(--color-gray);
+        opacity: .6;
         z-index: 0;
         top: 0;
         left:0;
