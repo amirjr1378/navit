@@ -1,0 +1,45 @@
+.splash-container {
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  background-image: url('/static/img/bg.png');
+  background-size: cover;
+  background-color: orange;
+  .bg--orange {
+    z-index: -1;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
+  .bg--town {
+    height: 120%;
+    position: absolute;
+    width: 100%;
+    bottom: -10%;
+    left: 0;
+    @media (min-width: 1024px) {
+      height: 180%;
+      bottom: -40%;
+    }
+  }
+  .logo {
+    position: absolute;
+    top: 10%;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  .splash__spinner {
+    position: absolute;
+    bottom: 10%;
+    left: 50%;
+    transform: translateX(-50%);
+    color: white;
+    font-size: 30px;
+    @media ( max-width: 600px) {
+        bottom: 6%;
+    }
+  }
+}

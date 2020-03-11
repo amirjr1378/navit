@@ -1,7 +1,20 @@
 .signup-container {
+    position: relative;
+    background-image: url('/static/img/signup-bg.png');
+    background-image:
+       image-set(
+         "/static/img/signup-bg.png" 1x,
+         "/static/img/signup-bg@2x.png" 2x,
+         "/static/img/signup-bg@3x.png" 3x,
+       );
+
+    background-size: 100% 120%;
+    background-position: 0 30%;
+    background-repeat: no-repeat;
+    
     width: 100%;
     min-height: 100vh;
-    background:  var(--color-base);
+    background-color:  var(--color-base);
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -19,6 +32,7 @@
         width: 330px;
         padding-bottom: 10px;
         margin: auto;
+        padding-top: 162px;
         display: flex;
         flex-direction: column;
         @media(max-width: 500px) {

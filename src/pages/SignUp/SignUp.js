@@ -46,6 +46,17 @@ function SignUp({ ...props }) {
     );
     return (
         <div className="signup-container">
+          {/*
+
+          <div className="signup__bg">
+            <img
+              src="/static/img/signup-bg.png"
+              srcSet="/static/img/signup-bg@2x.png 2x,
+              /static/img/signup-bg@3x.png 3x" />
+          </div>
+
+
+            */}
             <form className="signup__card" onSubmit={handleSubmit}>
                 <img
                     className="signup__icon"
