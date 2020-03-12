@@ -1,6 +1,6 @@
 import React from 'react';
 import Splash from './pages/Splash';
-import {Link, Switch, Route} from "react-router-dom";
+import {Link, Switch, Route, Redirect} from "react-router-dom";
 import Auth from './containers/Auth';
 
 
@@ -17,6 +17,7 @@ function App(props) {
         <Route path="/" exact component={Navigation} />
         <Route path="/splash" component={Splash} />
         <Route path="/auth" component={Auth} />
+        <Redirect to="/" />
       </Switch>
     )
 }
