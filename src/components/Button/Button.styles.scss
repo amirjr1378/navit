@@ -23,6 +23,10 @@
     }
 
     &.btn--warning {
+        background-color: var(--color-warning);
+        color: var(--color-whitish);
+    }
+    &.btn--warning-reverse {
         background-color: rgba(#ffa41b, 0.1);
         color: var(--color-warning);
     }

@@ -21,7 +21,7 @@ function Button({
         ['btn--' + color]: color
     });
     return (
-        <button className={btnClassName} {...otherProps}>
+        <button className={btnClassName} {...otherProps} disabled={loading}>
             <div className={classnames("btn__content", { hidden: loading })}>
                 {children}
             </div>

@@ -25,9 +25,9 @@ export default (
   };
   const [touched, setTouched] = useState(setInitialTouched());
 
-  const validate = () => {
-    if (!validateCallback) return {};
-    let e = validateCallback(form);
+  const validate = (valcb = validateCallback) => {
+    if (!valcb) return {};
+    let e = valcb(form);
     setErrors(e);
     return e;
   };
@@ -109,6 +109,7 @@ export default (
   };
 
   return {
+    validate,
     files,
     handleChange,
     handleBlur,

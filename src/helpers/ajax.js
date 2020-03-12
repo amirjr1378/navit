@@ -116,4 +116,12 @@ export class ajax {
     static put(...args) {
         return postAjax("put", ...args);
     }
+    static mock(route, fromInput) {
+      return new Promise((resolve, reject) => {
+        setTimeout(() => {
+          console.log('mock', fromInput)
+          resolve({status:true})
+        }, 500)
+      })
+    }
 }
