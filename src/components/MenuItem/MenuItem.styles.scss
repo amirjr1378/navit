@@ -1,0 +1,22 @@
+.menu__item {
+  background-color: var(--color-lighter);
+  padding: 1em 1.4em;
+  border-radius: 5px;
+  @media (max-width: 460px) {
+    font-size: 14px;
+  }
+
+  @media (max-width: 360px) {
+    font-size: 12px;
+    padding: 1em 1.5em;
+  }
+  .menu__item__icon {
+    font-size: 0.7em;
+    margin: 0.7em;
+  }
+  .menu__item__label {
+    white-space: nowrap;
+    letter-spacing: -0.33px;
+    font-size: 0.9em;
+  }
+}

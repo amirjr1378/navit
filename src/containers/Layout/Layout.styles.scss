@@ -1,0 +1,29 @@
+.layout-container {
+  display: flex;
+  flex-direction: column;
+  background: var(--color-primary);
+  min-height: 100vh;
+  text-align: center;
+  &.warning {
+    background: var(--color-warning);
+    @media (max-width: 500px) {
+      .layout__content {
+        border-radius: 60px 0 0 0 !important;
+      }
+    }
+  }
+  .layout__header {
+    flex-basis: 150px;
+    padding: 40px 25px;
+    color: var(--color-whitish);
+  }
+  .layout__content {
+    background-color: white;
+    flex-grow: 1;
+    padding: 20px;
+    border-radius: 60px 60px 0 0;
+    @media (max-width: 500px) {
+      border-radius: 0 60px 0 0;
+    }
+  }
+}

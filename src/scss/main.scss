@@ -4,7 +4,7 @@
 @import "abstracts/variables", "abstracts/functions", "abstracts/mixins";
 
 // 2. Vendors
-@import "vendors/normalize", "vendors/animate", "vendors/grid" ;
+@import "vendors/normalize", "vendors/animate";
 
 // 3. Base stuff
 @import "base/base", "base/fonts", "base/typography", "base/helpers";
