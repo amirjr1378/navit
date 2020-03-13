@@ -17,7 +17,7 @@
   .bg--town {
     height: 120%;
     position: absolute;
-    width: 100%;
+    min-width: 100%;
     bottom: -10%;
     left: 0;
     @media (min-width: 1024px) {
@@ -34,7 +34,7 @@
   .splash__spinner {
     position: absolute;
     bottom: 10%;
-    left: 50%;
+    left: 48%;
     transform: translateX(-50%);
     color: white;
     font-size: 30px;
