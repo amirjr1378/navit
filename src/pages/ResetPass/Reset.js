@@ -6,7 +6,7 @@ import ChangePass from '../../containers/ChangePass';
 let currentValue = {};
 function Reset(props) {
   const stepProps = useStepper();
-  const {step, increase, decrease } = stepProps;
+  const {step, increase} = stepProps;
   const increaseStep = data => {
     currentValue = {...currentValue, ...data}
     increase();
@@ -15,6 +15,7 @@ function Reset(props) {
    switch(step) {
       case 1: return <EnterVerifyCode increase={increaseStep} />
       case 2: return <ChangePass currentValue={currentValue}/>
+      default: return null;
     }
 }
 

@@ -10,8 +10,9 @@ const initialValue = {
 }
 const ChangePass = function({currentValue}) {
 
-  const sendForm = async function() {
+  const sendForm = async function({setSubmitting}) {
       await ajax.mock('posts', {password:form.password, ...currentValue}, {'content-type': 'json'})
+      setSubmitting(false);
   }
   const validateCallback = function(values) {
     const e = {}

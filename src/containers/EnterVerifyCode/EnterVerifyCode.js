@@ -2,7 +2,6 @@ import React from 'react';
 import {Input} from '../../components/Form';
 import {Button} from '../../components/Button';
 import Timer from '../../components/Timer';
-import {Link} from 'react-router-dom';
 import {useForm,useTimer} from '../../hooks';
 import {ajax} from '../../helpers';
 import {withRouter} from 'react-router-dom';
@@ -13,7 +12,7 @@ const EnterVerifyCode = function({increase, match}) {
   const initialValue = React.useMemo(() => ({
     phone: match.params.phone,
     verifyCode: ''
-  }), []);
+  }), [match.params.phone]);
 
   const {timer} = useTimer(120);
 

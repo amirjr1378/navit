@@ -6,7 +6,7 @@ import EnterPass from '../../containers/EnterPass';
 let currentValue = {};
 function Login(props) {
   const stepProps = useStepper();
-  const {step, increase, decrease } = stepProps;
+  const {step, increase } = stepProps;
   const increaseStep = data => {
     if(!data) return;
     currentValue = {...currentValue, ...data}
@@ -15,6 +15,7 @@ function Login(props) {
   switch(step) {
       case 1: return <EnterPhone  increase={increaseStep} />
       case 2: return <EnterPass currentValue={currentValue} />
+      default: return null;
   }
 
 }

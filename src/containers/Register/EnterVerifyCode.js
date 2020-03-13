@@ -3,17 +3,15 @@ import {Input} from '../../components/Form';
 import {Button} from '../../components/Button';
 import EditNumber from '../../components/EditNumber';
 import Timer from '../../components/Timer';
-import {Link} from 'react-router-dom';
 import {useForm,useTimer} from '../../hooks';
 import {ajax} from '../../helpers';
-import {withRouter} from 'react-router-dom';
 
 
 const EnterVerifyCode = function({increase, currentValue}) {
   const initialValue = React.useMemo(() => ({
     phone: currentValue.phone,
     verifyCode: ''
-  }), []);
+  }), [currentValue.phone]);
 
   const {timer} = useTimer(120);
 

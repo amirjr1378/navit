@@ -18,8 +18,9 @@ function Register({ ...props }) {
         customerType === "real" ? setCustomerType("legal") : setCustomerType("real");
     }
 
-    const sendForm = async () => {
+    const sendForm = async ({setSubmitting}) => {
         await ajax.post("posts", form, { "content-type": "json" });
+        setSubmitting(false);
     };
     const handleError = values => {
         const error = {};

@@ -11,10 +11,10 @@ const initialValue = {
 }
 export default function({currentValue}) {
 
-  const send = async function() {
-    let registered = true; // we assume it is registered
+  const send = async function({setSubmitting}) {
     await ajax.mock('/', {phone:currentValue.phone});
-    // fetch api to see if it is registered or
+    setSubmitting(false);
+    //redirect to panel
   }
 
   const validateCallback = function(values) {

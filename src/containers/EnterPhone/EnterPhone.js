@@ -10,15 +10,17 @@ const initialValue = {
 }
 
 const EnterPhone = function({increase, history}) {
-  const increaseStep = async function() {
+  const increaseStep = async function({setSubmitting}) {
     let registered = true; // we assume it is registered
     await ajax.mock('/', {phone:form.phone});
+    setSubmitting(false);
     // fetch api to see if it is registered or
     if(registered) {
       increase(form);
     }else {
       history.push('register');
     }
+
   }
 
   const validateCallback = function(values) {

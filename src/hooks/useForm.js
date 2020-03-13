@@ -9,7 +9,6 @@ export default (
   const [form, setForm] = useState(initialValues); //for holding initial form data
   const [files, setFiles] = useState(initialValues); //for holding files with input type file
   const [errors, setErrors] = useState({}); //for validation errors
-  const [success, setSuccess] = useState(false); //set to true if form was submitted successfully
   const [submitting, setSubmitting] = useState(false); //set to true when first submitting the form to disable the submit button
 
 
@@ -100,11 +99,9 @@ export default (
       //after I get a warning about trying to set state on an unmounted component.
       console.log("no errors.");
 
-      setSuccess(await handleSubmitCallback());
-      setSubmitting(false);
+      await handleSubmitCallback({setSubmitting})
     } else {
       setSubmitting(false);
-      setSuccess(false);
     }
   };
 
@@ -119,7 +116,6 @@ export default (
     errors,
     touched,
     submitting,
-    success,
     clear,
     bind: name => ({
       onChange: handleChange,

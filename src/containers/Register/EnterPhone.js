@@ -1,9 +1,7 @@
 import React from 'react';
 import {Input} from '../../components/Form';
 import {Button} from '../../components/Button';
-import {withRouter} from 'react-router-dom';
 import {useForm} from '../../hooks';
-import {ajax} from '../../helpers';
 
 const initialValue = {
   phone: ''
