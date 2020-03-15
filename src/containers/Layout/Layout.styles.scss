@@ -16,6 +16,9 @@
     flex-basis: 200px;
     padding: 40px 25px;
     color: var(--color-whitish);
+    @media (max-width: 500px) {
+      flex-basis: 150px;
+    }
   }
   .layout__content {
     background-color: white;

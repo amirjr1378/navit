@@ -42,8 +42,8 @@ export default function({
           show: collapse
         })}
       >
-        {features.map(feature => (
-          <div className="feature">
+        {features.map((feature, i) => (
+          <div className="feature" key={"feature" + i}>
             <strong>{feature.label} </strong>
             <span>{feature.value}</span>
           </div>

@@ -62,7 +62,8 @@ const travels = [
 function Content(props) {
   return (
     <div className="travel-list__content">
-      {travels && travels.map(travel => <Travel {...travel} />)}
+      {travels &&
+        travels.map((travel, i) => <Travel {...travel} key={"travel" + i} />)}
     </div>
   );
 }
