@@ -16,8 +16,10 @@ export default function({ icon, label, editable, value }) {
         {editable && (
           <Editable.Toggle
             as="span"
-            className="lnr lnr-pencil cursor--pointer profile-edit-pencil"
-          />
+            className="cursor--pointer profile-edit-pencil"
+          >
+            {({ editMode }) => !editMode && <span className="lnr lnr-pencil" />}
+          </Editable.Toggle>
         )}
       </div>
     </Editable>

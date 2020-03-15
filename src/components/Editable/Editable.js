@@ -15,9 +15,14 @@ const Editable = function({ text, onSuccess, onCancel, children, ...props }) {
   );
 };
 
-function Toggle({ as: Component = "div", ...props }) {
-  const { toggle } = React.useContext(EditContext);
-  return <Component {...props} onClick={toggle} />;
+function Toggle({ as: Component = "div", children, ...props }) {
+  const { toggle, editMode } = React.useContext(EditContext);
+  const ui = typeof children === "function" ? children({ editMode }) : children;
+  return (
+    <Component {...props} onClick={toggle}>
+      {ui}
+    </Component>
+  );
 }
 const View = React.forwardRef(function View(
   { Input = "input", Content = "div", wrapperClassName = "", ...props },

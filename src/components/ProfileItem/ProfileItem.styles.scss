@@ -6,6 +6,7 @@
   display: flex;
   align-items: center;
   text-align: right;
+  overflow: hidden;
   &[disabled] {
     border: 0;
     background-color: var(--color-lighter);
@@ -54,5 +55,6 @@
   .profile-edit-pencil {
     opacity: 0.3;
     font-size: 1.2em;
+    vertical-align: middle;
   }
 }
