@@ -1,16 +1,14 @@
 import React from "react";
 export const EditContext = React.createContext(null);
 
-const Editable = function(
-  { text, onSuccess, onCancel, children, ...props },
-  ref
-) {
+const Editable = function({ text, onSuccess, onCancel, children, ...props }) {
   const [editMode, setEditMode] = React.useState(false);
   const toggle = () => setEditMode(state => !state);
 
   return (
     <EditContext.Provider
       value={{ toggle, editMode, text, onSuccess, onCancel }}
+      {...props}
     >
       {children}
     </EditContext.Provider>
