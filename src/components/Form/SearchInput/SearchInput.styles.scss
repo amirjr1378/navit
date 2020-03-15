@@ -1,0 +1,29 @@
+.search-input__container {
+  font-size: 1rem;
+  display: flex;
+  align-items: center;
+  background: transparent;
+  border: solid 1.5px rgba(255, 255, 255, 0.1);
+  height: 3.5em;
+  line-height: 3.5em;
+  color: white;
+  padding: 0.7em;
+  border-radius: 7px;
+  @media (max-width: 500px) {
+    font-size: 0.8rem;
+  }
+
+  input {
+    background: transparent !important;
+    border: 0 !important;
+    box-shadow: 0 !important;
+    outline: 0 !important;
+    padding: 0.2em;
+    flex: 1;
+    font-size: 1em;
+    -webkit-text-fill-color: white;
+    &::placeholder {
+      color: white;
+    }
+  }
+}

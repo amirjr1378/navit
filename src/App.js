@@ -5,6 +5,7 @@ import Auth from "./containers/Auth";
 import Menu from "./pages/Menu";
 import UserProfile from "./pages/UserProfile";
 import TravelList from "./pages/TravelList";
+import Faq from "./pages/Faq/Faq";
 
 const Navigation = () => (
   <ul style={{ padding: 40 }}>
@@ -26,6 +27,9 @@ const Navigation = () => (
     <li style={{ margin: 20, borderBottom: "1px solid black" }}>
       <Link to="/travel-list">travel list</Link>
     </li>
+    <li style={{ margin: 20, borderBottom: "1px solid black" }}>
+      <Link to="/faq">faq</Link>
+    </li>
   </ul>
 );
 function App(props) {
@@ -37,6 +41,7 @@ function App(props) {
       <Route path="/menu" component={Menu} />
       <Route path="/user-profile" component={UserProfile} />
       <Route path="/travel-list" component={TravelList} />
+      <Route path="/faq" component={Faq} />
       <Redirect to="/" />
     </Switch>
   );
