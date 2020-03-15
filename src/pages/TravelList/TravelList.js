@@ -13,7 +13,7 @@ function Header(props) {
   return (
     <div className="menu__header">
       <div style={{ flexGrow: 1 }}>
-        <h2>منوی کاربردی</h2>
+        <h2>لیست سفرها</h2>
       </div>
       <div className="cursor--pointer">
         <span
