@@ -71,7 +71,7 @@
   src: url("./FaNum/Yekan Bakh FaNum 04 Regular.eot");
   src: url("./FaNum/Yekan Bakh FaNum 04 Regular.eot?#iefix")
       format("embedded-opentype"),
-    /* IE6-8 */ url("./FaNum/Yekan Bakh FaNum 04 Regular..woff") format("woff"),
+    /* IE6-8 */ url("./FaNum/Yekan Bakh FaNum 04 Regular.woff") format("woff"),
     /* FF3.6+, IE9, Chrome6+, Saf5.1+*/
       url("./FaNum/Yekan Bakh FaNum 04 Regular.ttf") format("truetype");
 }
