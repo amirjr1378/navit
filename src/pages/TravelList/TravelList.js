@@ -1,21 +1,25 @@
 import React from "react";
 import Layout from "../../containers/Layout";
 import "./TravelList.styles.scss";
-import CircleShape from "../../components/CircleShape";
 import Travel from "../../containers/Travel";
+import { useHistory } from "react-router-dom";
 
 export default function() {
   return <Layout Header={Header} Content={Content} color="warning" />;
 }
 
 function Header(props) {
+  const history = useHistory();
   return (
     <div className="menu__header">
       <div style={{ flexGrow: 1 }}>
         <h2>منوی کاربردی</h2>
       </div>
       <div className="cursor--pointer">
-        <span className="lnr lnr-arrow-left"></span>
+        <span
+          className="lnr lnr-arrow-left"
+          onClick={() => history.goBack()}
+        ></span>
       </div>
     </div>
   );

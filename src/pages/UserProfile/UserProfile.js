@@ -3,19 +3,24 @@ import "./UserProfile.styles.scss";
 import Layout from "../../containers/Layout";
 import CircleShape from "../../components/CircleShape";
 import ProfileItem from "../../components/ProfileItem";
+import { useHistory } from "react-router-dom";
 
 export default function() {
   return <Layout Header={Header} Content={Content} color="warning" />;
 }
 
 function Header(props) {
+  const history = useHistory();
   return (
     <div className="menu__header">
       <div style={{ flexGrow: 1 }}>
         <h2>پروفایل کاربری</h2>
       </div>
       <div className="cursor--pointer">
-        <span className="lnr lnr-arrow-left"></span>
+        <span
+          className="lnr lnr-arrow-left cursor--pointer"
+          onClick={() => history.goBack()}
+        />
       </div>
     </div>
   );

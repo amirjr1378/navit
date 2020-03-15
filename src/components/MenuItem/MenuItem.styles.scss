@@ -6,13 +6,10 @@
   display: flex;
   align-items: center;
   @media (max-width: 460px) {
-    font-size: 14px;
+    font-size: 16px;
+    padding: 1.2em 1.2em;
   }
 
-  @media (max-width: 360px) {
-    font-size: 12px;
-    padding: 1em 1.5em;
-  }
   .menu__item__icon {
     margin-left: 0.6em;
   }
