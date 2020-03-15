@@ -1,0 +1,108 @@
+.travel__container {
+  border-radius: 15px;
+  box-shadow: 0 0 60px 0 rgba(0, 0, 0, 0.06);
+  background-color: #ffffff;
+  margin-bottom: 40px;
+  padding: 30px 20px;
+  @media (max-width: 800px) {
+    padding: 30px 2px;
+  }
+}
+.travel__date {
+  text-align: center;
+  height: 50px;
+  line-height: 50px;
+  width: 90%;
+  margin: auto;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.08);
+  margin-bottom: 20px;
+  font-weight: 600;
+  color: rgba(0, 0, 0, 0.6);
+  font-size: 1.2rem;
+  opacity: 0.6;
+  letter-spacing: -0.3px;
+  text-align: center;
+  @media (max-width: 500px) {
+    width: 100%;
+    font-size: 0.9rem;
+  }
+}
+.travel__footer {
+  width: 90%;
+  margin: 20px auto;
+  border-top: 1px solid rgba(0, 0, 0, 0.08);
+  padding-top: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.travel__path {
+  display: flex;
+  align-items: center;
+  font-size: 0.8em;
+  letter-spacing: -0.3px;
+  font-weight: 500;
+  font-stretch: normal;
+  font-style: normal;
+  color: rgba(0, 0, 0, 0.6);
+  span {
+    color: var(--color-warning);
+    margin: 10px;
+  }
+  @media (max-width: 500px) {
+    font-size: 0.6em;
+  }
+}
+.features {
+  margin-top: 20px;
+  padding: 30px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  overflow: hidden;
+  display: none;
+  &.show {
+    display: flex;
+    animation: show 0.4s ease;
+  }
+  @media (max-width: 800px) {
+    padding: 10px;
+  }
+
+  div {
+    white-space: nowrap;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+    color: rgba(0, 0, 0, 0.6);
+    flex-basis: 48%;
+    font-size: 1rem;
+    padding: 1.4em 1em;
+    text-align: center;
+    &.warning {
+      background-color: rgba(#ffa41b, 0.1);
+      color: var(--color-warning);
+    }
+    span {
+      margin-right: 0.5em;
+    }
+    @media (max-width: 400px) {
+      flex-basis: 49%;
+      font-size: 0.8rem;
+      padding: 1.4em 0.6em;
+    }
+    margin-bottom: 10px;
+  }
+}
+.close-button {
+  text-align: center;
+  margin-bottom: -50px;
+}
+
+@keyframes show {
+  from {
+    transform: scaleY(0);
+  }
+  to {
+    transform: scaleY(1);
+  }
+}

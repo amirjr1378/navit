@@ -10,12 +10,10 @@ html {
 }
 
 body {
-  color: getColor(text-color);
   background-color: getColor(base);
-  font-family: 'Vazir'!important;
 }
 body[direction="rtl"] {
-    direction: rtl;
+  direction: rtl;
 }
 
 /**

@@ -1,8 +1,7 @@
-import React from 'react';
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import "./EditNumber.styles.scss"
+import React from "react";
+import "./EditNumber.styles.scss";
 
-export default function({label, phone, ...props}) {
+export default function({ label, phone, ...props }) {
   return (
     <div className="edit-container" {...props}>
       <div className="edit__text">
@@ -10,8 +9,8 @@ export default function({label, phone, ...props}) {
         <span>{phone}</span>
       </div>
       <div className="edit__icon">
-        <FontAwesomeIcon icon={['fas', 'pen']} />
+        <span className="lnr lnr-pencil" />
       </div>
     </div>
-  )
+  );
 }

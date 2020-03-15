@@ -16,4 +16,19 @@
     left: 5%;
     top: 5%;
   }
+  .shape__icon {
+    font-size: 0.9em;
+    position: absolute;
+    right: -15%;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 35%;
+    height: 35%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border-radius: 100%;
+    color: white;
+    background-color: var(--color-warning);
+  }
 }

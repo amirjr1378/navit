@@ -1,6 +1,5 @@
 import React from "react";
 import Layout from "../../containers/Layout";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import "./Menu.styles.scss";
 import CircleShape from "../../components/CircleShape";
 import MenuItem from "../../components/MenuItem";
@@ -16,23 +15,23 @@ function Header(props) {
         <h2>منوی کاربردی</h2>
       </div>
       <div className="cursor--pointer">
-        <FontAwesomeIcon icon={["fas", "long-arrow-alt-left"]} size="lg" />
+        <span className="lnr lnr-arrow-left"></span>
       </div>
     </div>
   );
 }
 
 const menuItems = [
-  { label: "سفر ها", icon: ["fa", "heart"] },
-  { label: "سرویس ها", icon: ["fa", "heart"] },
-  { label: "افزایش اعتبار", icon: ["fa", "heart"] },
-  { label: "تراکنش ها", icon: ["fa", "heart"] },
-  { label: "منتخب ها", icon: ["fa", "heart"] },
-  { label: "اطلاعات کاربری", icon: ["fa", "heart"] },
-  { label: "درباره ما", icon: ["fa", "heart"] },
-  { label: "پشتیبانی", icon: ["fa", "heart"] },
-  { label: "سوالات متداول", icon: ["fa", "heart"] },
-  { label: "تنظیمات", icon: ["fa", "heart"] }
+  { label: "سفر ها", icon: "lnr-heart" },
+  { label: "سرویس ها", icon: "lnr-briefcase" },
+  { label: "افزایش اعتبار", icon: "lnr-heart" },
+  { label: "تراکنش ها", icon: "lnr-pie-chart" },
+  { label: "منتخب ها", icon: "lnr-star" },
+  { label: "اطلاعات کاربری", icon: "lnr-user" },
+  { label: "درباره ما", icon: "lnr-heart" },
+  { label: "پشتیبانی", icon: "lnr-bubble" },
+  { label: "سوالات متداول", icon: "lnr-question-circle" },
+  { label: "تنظیمات", icon: "lnr-cog" }
 ];
 function Content(props) {
   return (

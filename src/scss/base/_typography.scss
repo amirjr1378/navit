@@ -4,3 +4,8 @@ body {
   font: normal 125% / 1.4 $text-font-stack;
 }
  */
+
+body {
+  color: getColor(text-color);
+  font: normal 125% / 1.4 $text-font-stack;
+}

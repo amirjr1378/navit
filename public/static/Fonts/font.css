@@ -1,0 +1,77 @@
+@font-face {
+  font-family: YekanBakh;
+  font-style: normal;
+  font-weight: 900;
+  src: url("./FaNum/Yekan Bakh FaNum 08 Fat.eot");
+  src: url("./FaNum/Yekan Bakh FaNum 08 Fat.eot?#iefix")
+      format("embedded-opentype"),
+    /* IE6-8 */ url("./FaNum/Yekan Bakh FaNum 08 Fat.woff") format("woff"),
+    /* FF3.6+, IE9, Chrome6+, Saf5.1+*/
+      url("./FaNum/Yekan Bakh FaNum 08 Fat.ttf") format("truetype");
+}
+@font-face {
+  font-family: YekanBakh;
+  font-style: normal;
+  font-weight: bold;
+  src: url("./FaNum/Yekan Bakh FaNum 06 Bold.eot");
+  src: url("./FaNum/Yekan Bakh FaNum 06 Bold.eot?#iefix")
+      format("embedded-opentype"),
+    /* IE6-8 */ url("./FaNum/Yekan Bakh FaNum 06 Bold.woff") format("woff"),
+    /* FF3.6+, IE9, Chrome6+, Saf5.1+*/
+      url("./FaNum/Yekan Bakh FaNum 06 Bold.ttf") format("truetype");
+}
+@font-face {
+  font-family: YekanBakh;
+  font-style: normal;
+  font-weight: 500;
+  src: url("./FaNum/Yekan Bakh FaNum 05 Medium.eot");
+  src: url("./FaNum/Yekan Bakh FaNum 05 Medium.eot?#iefix")
+      format("embedded-opentype"),
+    /* IE6-8 */ url("./FaNum/Yekan Bakh FaNum 05 Medium.woff") format("woff"),
+    /* FF3.6+, IE9, Chrome6+, Saf5.1+*/
+      url("./FaNum/Yekan Bakh FaNum 05 Medium.ttf") format("truetype");
+}
+@font-face {
+  font-family: YekanBakh;
+  font-style: normal;
+  font-weight: 300;
+  src: url("./FaNum/Yekan Bakh FaNum 03 Light.eot");
+  src: url("./FaNum/Yekan Bakh FaNum 03 Light.eot?#iefix")
+      format("embedded-opentype"),
+    /* IE6-8 */ url("./FaNum/Yekan Bakh FaNum 03 Light.woff") format("woff"),
+    /* FF3.6+, IE9, Chrome6+, Saf5.1+*/
+      url("./FaNum/Yekan Bakh FaNum 03 Light.ttf") format("truetype");
+}
+@font-face {
+  font-family: YekanBakh;
+  font-style: normal;
+  font-weight: lighter;
+  src: url("./FaNum/Yekan Bakh FaNum 03 Light.eot");
+  src: url("./FaNum/Yekan Bakh FaNum 03 Light.eot?#iefix")
+      format("embedded-opentype"),
+    /* IE6-8 */ url("./FaNum/Yekan Bakh FaNum 03 Light.woff") format("woff"),
+    /* FF3.6+, IE9, Chrome6+, Saf5.1+*/
+      url("./FaNum/Yekan Bakh FaNum 03 Light.ttf") format("truetype");
+}
+@font-face {
+  font-family: YekanBakh;
+  font-style: normal;
+  font-weight: 200;
+  src: url("./FaNum/Yekan Bakh FaNum 02 Thin.eot");
+  src: url("./FaNum/Yekan Bakh FaNum 02 Thin.eot?#iefix")
+      format("embedded-opentype"),
+    /* IE6-8 */ url("./FaNum/Yekan Bakh FaNum 02 Thin.woff") format("woff"),
+    /* FF3.6+, IE9, Chrome6+, Saf5.1+*/
+      url("./FaNum/Yekan Bakh FaNum 02 Thin.ttf") format("truetype");
+}
+@font-face {
+  font-family: YekanBakh;
+  font-style: normal;
+  font-weight: normal;
+  src: url("./FaNum/Yekan Bakh FaNum 04 Regular.eot");
+  src: url("./FaNum/Yekan Bakh FaNum 04 Regular.eot?#iefix")
+      format("embedded-opentype"),
+    /* IE6-8 */ url("./FaNum/Yekan Bakh FaNum 04 Regular..woff") format("woff"),
+    /* FF3.6+, IE9, Chrome6+, Saf5.1+*/
+      url("./FaNum/Yekan Bakh FaNum 04 Regular.ttf") format("truetype");
+}

@@ -3,6 +3,8 @@ import Splash from "./pages/Splash";
 import { Link, Switch, Route, Redirect } from "react-router-dom";
 import Auth from "./containers/Auth";
 import Menu from "./pages/Menu";
+import UserProfile from "./pages/UserProfile";
+import TravelList from "./pages/TravelList";
 
 const Navigation = () => (
   <ul style={{ padding: 40 }}>
@@ -18,6 +20,12 @@ const Navigation = () => (
     <li style={{ margin: 20, borderBottom: "1px solid black" }}>
       <Link to="/menu">menu</Link>
     </li>
+    <li style={{ margin: 20, borderBottom: "1px solid black" }}>
+      <Link to="/user-profile">user profile</Link>
+    </li>
+    <li style={{ margin: 20, borderBottom: "1px solid black" }}>
+      <Link to="/travel-list">travel list</Link>
+    </li>
   </ul>
 );
 function App(props) {
@@ -27,6 +35,8 @@ function App(props) {
       <Route path="/splash" component={Splash} />
       <Route path="/auth" component={Auth} />
       <Route path="/menu" component={Menu} />
+      <Route path="/user-profile" component={UserProfile} />
+      <Route path="/travel-list" component={TravelList} />
       <Redirect to="/" />
     </Switch>
   );

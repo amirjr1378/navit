@@ -1,7 +1,10 @@
 .menu__item {
   background-color: var(--color-lighter);
+  color: rgba(0, 0, 0, 0.6);
   padding: 1em 1.4em;
   border-radius: 5px;
+  display: flex;
+  align-items: center;
   @media (max-width: 460px) {
     font-size: 14px;
   }
@@ -11,8 +14,7 @@
     padding: 1em 1.5em;
   }
   .menu__item__icon {
-    font-size: 0.7em;
-    margin: 0.7em;
+    margin-left: 0.6em;
   }
   .menu__item__label {
     white-space: nowrap;

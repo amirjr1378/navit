@@ -1,0 +1,10 @@
+.travel-list__content {
+  text-align: right;
+  width: 500px;
+  margin: 20px auto;
+  display: flex;
+  flex-direction: column;
+  @media (max-width: 500px) {
+    width: 100%;
+  }
+}
