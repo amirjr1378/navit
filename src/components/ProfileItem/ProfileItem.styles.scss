@@ -18,6 +18,21 @@
     font-size: 12px;
     padding: 1em 1.5em;
   }
+  .change-input-profile {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    padding: 0 0.5em;
+    input {
+      border: solid 1px rgba(0, 0, 0, 0.06);
+      flex-grow: 1;
+      white-space: nowrap;
+      letter-spacing: -0.33px;
+      font-size: 0.7em;
+      opacity: 0.6;
+      padding: 0.8em 0.2em;
+    }
+  }
   .profile__item__icon {
     margin-left: 0.9em;
     margin-top: -0.3rem;
