@@ -21,7 +21,8 @@
     padding: 0.2em;
     flex: 1;
     font-size: 1em;
-    -webkit-text-fill-color: white;
+    caret-color: white;
+    color: white;
     &::placeholder {
       color: white;
     }
