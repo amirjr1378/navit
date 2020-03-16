@@ -42,4 +42,13 @@
       font-size: 0.9rem;
     }
   }
+  .employees {
+    .glide__slide {
+      opacity: 0.3;
+    }
+
+    .glide__slide--active {
+      opacity: 1;
+    }
+  }
 }
