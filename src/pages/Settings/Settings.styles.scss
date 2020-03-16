@@ -1,0 +1,17 @@
+.settings {
+  width: 450px;
+  margin: -80px auto;
+  display: flex;
+  flex-direction: column;
+  @media (max-width: 490px) {
+    width: 100%;
+  }
+  div.setting__items {
+    margin-top: 20px;
+    width: 100%;
+    margin-bottom: 15px;
+    > div {
+      margin-bottom: 0.8em;
+    }
+  }
+}
