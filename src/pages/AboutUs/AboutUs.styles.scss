@@ -1,0 +1,45 @@
+.about-us__content {
+  width: 550px;
+  margin: 20px auto;
+  display: flex;
+  flex-direction: column;
+  font-size: 1.2rem;
+  @media (max-width: 550px) {
+    width: 100%;
+    font-size: 1rem;
+  }
+
+  h2 {
+    font-weight: 500;
+    font-size: 1.5em;
+    letter-spacing: -0.6px;
+    text-align: center;
+    color: rgba(0, 0, 0, 0.6);
+    margin-bottom: 0.6em;
+  }
+  .about-us__text {
+    font-size: 0.9em;
+    letter-spacing: -0.19px;
+    text-align: justify;
+    color: #666666;
+    font-weight: 300;
+    line-height: 2;
+  }
+  .supporters {
+    font-size: 1.2rem;
+    svg {
+      width: 4em;
+      fill: #4c4c4c;
+      opacity: 0.15;
+    }
+    .glide__slide--active {
+      svg {
+        fill: var(--color-warning);
+        opacity: 1;
+      }
+    }
+    @media (max-width: 500px) {
+      font-size: 0.9rem;
+    }
+  }
+}

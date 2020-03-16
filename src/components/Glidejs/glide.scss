@@ -1,0 +1,44 @@
+// Required Core Stylesheet
+@import "node_modules/@glidejs/glide/src/assets/sass/glide.core";
+
+// Optional Theme Stylesheet
+@import "node_modules/@glidejs/glide/src/assets/sass/glide.theme";
+
+.glide {
+  direction: ltr;
+}
+.carousel__showcase {
+  .glide__slide {
+    height: 150px;
+    display: flex !important;
+    justify-content: center;
+    border: 1px solid;
+    &span {
+      width: 100%;
+    }
+
+    &.glide__slide--active {
+      background: orangered;
+      color: white;
+    }
+  }
+}
+
+.glide__arrow {
+  border-radius: 100%;
+  border: none;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 48px;
+  height: 45px;
+
+  @media (max-width: 700px) {
+    width: 45px;
+    height: 45px;
+  }
+}
+.glide__arrow--icon {
+  color: deepskyblue;
+}

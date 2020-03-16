@@ -1,0 +1,29 @@
+.video__container {
+  background: var(--color-light);
+  position: relative;
+  overflow: hidden;
+  max-height: 250px;
+  border-radius: 7px;
+  video {
+    width: 100%;
+    height: 100%;
+    display: block;
+  }
+  .video__play {
+    z-index: 2;
+    position: absolute;
+    left: 50%;
+    top: 35%;
+    transform: translate(-50%);
+  }
+  .video__overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    opacity: 0.7;
+    background-color: var(--color-warning);
+  }
+}

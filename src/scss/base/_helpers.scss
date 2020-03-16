@@ -114,3 +114,10 @@
 .cursor--pointer {
   cursor: pointer;
 }
+
+.line {
+  width: 100%;
+  border-top-color: var(--color-light);
+  border-top-width: 1px;
+  opacity: 0.2;
+}

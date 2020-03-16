@@ -1,0 +1,43 @@
+.employee__container {
+  direction: rtl;
+  text-align: right;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 1rem;
+  border-radius: 10px;
+  border: solid 4px rgba(247, 132, 8, 0.1);
+  padding: 0.5em;
+  @media (max-width: 340px) {
+    font-size: 0.9rem;
+  }
+
+  .employee__details {
+    flex: 1;
+    margin-right: 0.8em;
+    :first-child {
+      color: var(--color-warning);
+      font-weight: 700;
+      font-size: 1.4em;
+      letter-spacing: -0.24px;
+    }
+    :nth-child(2) {
+      color: rgba(0, 0, 0, 0.6);
+      font-weight: 300;
+      font-size: 1em;
+      letter-spacing: -0.17px;
+    }
+  }
+  .employee__contact {
+    cursor: pointer;
+    width: 3em;
+    height: 3em;
+    line-height: 3em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 100%;
+    background-color: var(--color-warning);
+    color: white;
+  }
+}
