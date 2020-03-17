@@ -32,6 +32,7 @@ const Toggle = function({ as: Component = "div", children, ...props }) {
     </Component>
   );
 };
+Toggle.displayname = "Toggle";
 
 const Content = function({
   as: Component = "div",
@@ -57,6 +58,7 @@ const Content = function({
     </Component>
   );
 };
+Content.displayname = "Content";
 
 Collapse.Toggle = Toggle;
 Collapse.Content = Content;

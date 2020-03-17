@@ -69,7 +69,7 @@ function Content(props) {
   return (
     <div className="faq__content">
       {faqs.map(({ question, answere }, index) => (
-        <Collapse className="faq__collapse">
+        <Collapse className="faq__collapse" key={"faq" + index}>
           <Collapse.Toggle className="faq__question">
             {({ collapse }) => (
               <>

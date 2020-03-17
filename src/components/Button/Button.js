@@ -1,7 +1,6 @@
 import React from "react";
 import classnames from "classnames";
 import "./Button.styles.scss";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 function Button({
   children,
@@ -28,7 +27,7 @@ function Button({
         {children}
       </div>
       <div className={classnames("btn__spinner", { hidden: !loading })}>
-        <FontAwesomeIcon icon={["fas", "spinner"]} pulse />
+        <span className="lnr lnr-sync"></span>
       </div>
     </button>
   );
