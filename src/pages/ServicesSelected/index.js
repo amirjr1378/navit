@@ -6,11 +6,17 @@ import "./ServicesSelected.styles.scss";
 import ServiceType from "../../components/ServiceType";
 const token =
   "pk.eyJ1IjoiYW1pcnNuYWtlIiwiYSI6ImNrN3hneG44ajBjOTgzZXFwenUzbjRuN2UifQ.lWPO3NBswNdXgnSGv02QlA";
+const lightUrl =
+  "https://tiles.stadiamaps.com/tiles/alidade_smooth/{z}/{x}/{y}{r}.png";
+const darkUrl =
+  "https://tiles.stadiamaps.com/tiles/alidade_smooth_dark/{z}/{x}/{y}{r}.png";
+
+const streetmap = "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png";
 
 function ServicesSelected(props) {
   const [viewport, setViewport] = useState({
     center: [35.6961, 51.4231],
-    zoom: 15
+    zoom: 19
   });
   return (
     <div className="services">
@@ -21,7 +27,7 @@ function ServicesSelected(props) {
         >
           <TileLayer
             attribution='&copy; <a href="http://osm.org/copyright">OpenStreetMap</a> contributors'
-            url="http://{s}.tile.osm.org/{z}/{x}/{y}.png"
+            url={streetmap}
           />
         </Map>
       </div>
