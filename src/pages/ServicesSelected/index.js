@@ -4,6 +4,8 @@ import { Menu } from "../../components/Icons";
 import { Button } from "../../components/Button";
 import "./ServicesSelected.styles.scss";
 import ServiceType from "../../components/ServiceType";
+const token =
+  "pk.eyJ1IjoiYW1pcnNuYWtlIiwiYSI6ImNrN3hneG44ajBjOTgzZXFwenUzbjRuN2UifQ.lWPO3NBswNdXgnSGv02QlA";
 
 function ServicesSelected(props) {
   const [viewport, setViewport] = useState({
@@ -19,7 +21,7 @@ function ServicesSelected(props) {
         <ReactMapGL
           {...viewport}
           onViewportChange={setViewport}
-          mapboxApiAccessToken={process.env.REACT_APP_MAPBOX}
+          mapboxApiAccessToken={token}
         />
       </div>
       <div className="services__header">
