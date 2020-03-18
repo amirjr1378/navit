@@ -1,0 +1,31 @@
+.service-type__container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: var(--color-primary);
+  opacity: 0.9;
+  border-radius: 8px;
+  color: white;
+  font-size: 1.2rem;
+  width: 7em;
+  height: 8em;
+
+  &.warning {
+    background: var(--color-warning);
+  }
+  .service-type__icon {
+    font-size: 3.2em;
+  }
+  .service-type__line {
+    width: 1.3em;
+    height: 2px;
+    color: white;
+    background-color: white;
+    border-radius: 4px;
+    margin: 0.8em 0;
+  }
+  .service-type__label {
+    font-size: 0.8em;
+  }
+}

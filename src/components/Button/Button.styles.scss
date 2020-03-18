@@ -34,6 +34,12 @@
   &.btn--warning {
     background-color: var(--color-warning);
     color: var(--color-whitish);
+    fill: var(--color-whitish);
+  }
+  &.btn--warning-outline {
+    color: var(--color-warning);
+    fill: var(--color-warning);
+    background-color: var(--color-whitish);
   }
   &.btn--warning-reverse {
     background-color: rgba(#ffa41b, 0.1);

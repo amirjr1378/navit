@@ -1,0 +1,27 @@
+.services {
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  font-size: 1rem;
+  @media (max-width: 330px) {
+    font-size: 0.9rem;
+  }
+  .services__header {
+    position: absolute;
+    top: 5%;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 20em;
+    display: flex;
+    justify-content: space-between;
+  }
+  .services__footer {
+    position: absolute;
+    bottom: 5%;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 19em;
+    display: flex;
+    justify-content: space-between;
+  }
+}
