@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import ReactMapGL from "react-map-gl";
+import { Map, TileLayer } from "react-leaflet";
 import { Menu } from "../../components/Icons";
 import { Button } from "../../components/Button";
 import "./ServicesSelected.styles.scss";
@@ -9,20 +9,21 @@ const token =
 
 function ServicesSelected(props) {
   const [viewport, setViewport] = useState({
-    width: "100%",
-    height: "100vh",
-    latitude: 35.6961,
-    longitude: 51.4231,
+    center: [35.6961, 51.4231],
     zoom: 15
   });
   return (
     <div className="services">
-      <div style={{ direction: "ltr" }}>
-        <ReactMapGL
-          {...viewport}
-          onViewportChange={setViewport}
-          mapboxApiAccessToken={token}
-        />
+      <div style={{ direction: "ltr", width: "100%", height: "100vh" }}>
+        <Map
+          viewport={viewport}
+          onViewportChange={newViewport => setViewport(newViewport)}
+        >
+          <TileLayer
+            attribution='&copy; <a href="http://osm.org/copyright">OpenStreetMap</a> contributors'
+            url="http://{s}.tile.osm.org/{z}/{x}/{y}.png"
+          />
+        </Map>
       </div>
       <div className="services__header">
         <Button circle color="warning-outline" style={{ padding: 5 }}>
