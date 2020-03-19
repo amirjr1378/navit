@@ -28,7 +28,13 @@ function Splash(props) {
         className="logo"
       />
 
-      <span className="lnr lnr-sync"></span>
+      <img
+        src="/static/img/spinner.png"
+        srcSet="/static/img/spinner@2x.png 2x,
+        /static/img/spinner@3x.png 3x"
+        alt="spinner"
+        className="splash__spinner"
+      />
     </div>
   );
 }
