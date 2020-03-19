@@ -10,7 +10,7 @@
   font-size: 1.2rem;
   width: 7em;
   height: 8em;
-
+  cursor: pointer;
   &.warning {
     background: var(--color-warning);
   }
