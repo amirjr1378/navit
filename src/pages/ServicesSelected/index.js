@@ -5,6 +5,7 @@ import { Button } from "../../components/Button";
 import "./ServicesSelected.styles.scss";
 import ServiceType from "../../components/ServiceType";
 import Dropdown, { Toggle, Content } from "../../components/Dropdown/Dropdown";
+import { withRouter } from "react-router-dom";
 
 class ServicesSelected extends React.Component {
   state = {
@@ -15,6 +16,7 @@ class ServicesSelected extends React.Component {
   };
   render() {
     const { viewport } = this.state;
+    const { history } = this.props;
     return (
       <div className="services">
         <div style={{ direction: "ltr", width: "100%", height: "100vh" }}>
@@ -42,12 +44,23 @@ class ServicesSelected extends React.Component {
         </div>
 
         <div className="services__footer">
-          <ServiceType icon="lnr-calendar-full" label="درخواست سرویس" />
-          <ServiceType icon="lnr-car" label="درخواست تاکسی" color="warning" />
+          <ServiceType
+            icon="lnr-calendar-full"
+            label="درخواست سرویس"
+            onClick={() =>
+              history.push(history.location.pathname + "/create-service")
+            }
+          />
+          <ServiceType
+            icon="lnr-car"
+            label="درخواست تاکسی"
+            color="warning"
+            onClick={() => history.push(history.location.pathname + "/taxi")}
+          />
         </div>
       </div>
     );
   }
 }
 
-export default ServicesSelected;
+export default withRouter(ServicesSelected);

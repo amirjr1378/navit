@@ -9,17 +9,18 @@ import Faq from "./pages/Faq/Faq";
 import Settings from "./pages/Settings/Settings";
 import AboutUs from "./pages/AboutUs";
 // css for map box
-import "mapbox-gl/dist/mapbox-gl.css";
-import { setRTLTextPlugin } from "react-map-gl";
+// import "mapbox-gl/dist/mapbox-gl.css";
+// import { setRTLTextPlugin } from "react-map-gl";
 
 import ServicesSelected from "./pages/ServicesSelected";
+import OrderTaxi from "./pages/OrderTaxi";
 
 // to make map box rtl version readable
-setRTLTextPlugin(
-  "https://api.mapbox.com/mapbox-gl-js/plugins/mapbox-gl-rtl-text/v0.2.3/mapbox-gl-rtl-text.js",
-  null,
-  true
-);
+// setRTLTextPlugin(
+//   "https://api.mapbox.com/mapbox-gl-js/plugins/mapbox-gl-rtl-text/v0.2.3/mapbox-gl-rtl-text.js",
+//   null,
+//   true
+// );
 
 const Navigation = () => (
   <ul style={{ padding: 40 }}>
@@ -67,8 +68,9 @@ function App(props) {
       <Route path="/faq" component={Faq} />
       <Route path="/settings" component={Settings} />
       <Route path="/about-us" component={AboutUs} />
-      <Route path="/services-selected" component={ServicesSelected} />
-      <Redirect to="/" />
+      <Route path="/services-selected" exact component={ServicesSelected} />
+      <Route path="/services-selected/taxi" exact component={OrderTaxi} />
+      {/* <Redirect to="/" /> */}
     </Switch>
   );
 }

@@ -1,6 +1,9 @@
 import React from "react";
 import { Map as LeafletMap, TileLayer } from "react-leaflet";
 
+import "leaflet/dist/leaflet.js";
+import "leaflet/dist/leaflet.css";
+
 const token =
   "pk.eyJ1IjoiYW1pcnNuYWtlIiwiYSI6ImNrN3hneG44ajBjOTgzZXFwenUzbjRuN2UifQ.lWPO3NBswNdXgnSGv02QlA";
 const lightUrl =

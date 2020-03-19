@@ -4,8 +4,6 @@ import App from "./App";
 import { BrowserRouter as Router } from "react-router-dom";
 import * as serviceWorker from "./serviceWorker";
 import "./scss/main.scss";
-import "leaflet/dist/leaflet.js";
-import "leaflet/dist/leaflet.css";
 
 ReactDOM.render(
   <Router>
