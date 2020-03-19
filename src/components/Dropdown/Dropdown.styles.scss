@@ -1,0 +1,26 @@
+.dropdown__container {
+  position: relative;
+  font-size: 1rem;
+  .dropdown__content {
+    background: #fff;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.4);
+    border-radius: 2px;
+    display: none;
+    flex-direction: column;
+    padding: 1em;
+    min-width: 200px;
+    position: absolute;
+    & > * {
+      cursor: pointer;
+      padding: 0.8em;
+      &:hover {
+        background-color: #eee;
+      }
+    }
+  }
+  .dropdown__button {
+    &:focus ~ .dropdown__content {
+      display: flex;
+    }
+  }
+}
