@@ -5,14 +5,6 @@ import { Button } from "../../components/Button";
 import "./ServicesSelected.styles.scss";
 import ServiceType from "../../components/ServiceType";
 import Dropdown, { Toggle, Content } from "../../components/Dropdown/Dropdown";
-const token =
-  "pk.eyJ1IjoiYW1pcnNuYWtlIiwiYSI6ImNrN3hneG44ajBjOTgzZXFwenUzbjRuN2UifQ.lWPO3NBswNdXgnSGv02QlA";
-const lightUrl =
-  "https://tiles.stadiamaps.com/tiles/alidade_smooth/{z}/{x}/{y}{r}.png";
-const darkUrl =
-  "https://tiles.stadiamaps.com/tiles/alidade_smooth_dark/{z}/{x}/{y}{r}.png";
-
-const streetmap = "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png";
 
 class ServicesSelected extends React.Component {
   state = {
