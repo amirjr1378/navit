@@ -1,20 +1,33 @@
 .suggestion__container {
   display: flex;
   align-items: center;
-  margin-bottom: 0.7em;
+  margin-bottom: 1em;
+  font-size: 1rem;
+  @media (max-width: 500px) {
+    font-size: 0.9rem;
+  }
   &:last-child {
     margin-bottom: 1.4em;
   }
   .suggestion__brand {
     flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    img {
+      width: 9em;
+      height: 2em;
+    }
   }
   .suggestion__diffTime {
-    margin-left: 0.8em;
+    margin-left: 1em;
     letter-spacing: -0.65px;
+    font-size: 1em;
     text-align: right;
     color: rgba(0, 0, 0, 0.6);
   }
   .suggestion__price {
+    font-size: 1.2em;
     color: var(--color-warning);
     font-weight: 800;
   }

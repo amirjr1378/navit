@@ -54,6 +54,7 @@ a {
 .leaflet-top,
 .leaflet-bottom {
   z-index: 0 !important;
+  visibility: hidden;
 }
 .leaflet-popup-content-wrapper {
   text-align: center !important;

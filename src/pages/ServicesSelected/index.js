@@ -38,7 +38,11 @@ class ServicesSelected extends React.Component {
               <span name="item 3">items</span>
             </Content>
           </Dropdown>
-          <Button circle color="warning-outline">
+          <Button
+            circle
+            color="warning-outline"
+            onClick={() => history.push("/")}
+          >
             <span className="lnr lnr-arrow-left" />
           </Button>
         </div>
