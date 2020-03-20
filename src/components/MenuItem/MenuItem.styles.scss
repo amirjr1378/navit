@@ -5,6 +5,7 @@
   border-radius: 5px;
   display: flex;
   align-items: center;
+  position: relative;
   @media (max-width: 460px) {
     font-size: 16px;
     padding: 1.2em 1.2em;
@@ -17,5 +18,17 @@
     white-space: nowrap;
     letter-spacing: -0.33px;
     font-size: 0.9em;
+  }
+  .menu__item__badge {
+    width: 1.5em;
+    height: 1.5em;
+    line-height: 1.5em;
+    font-size: 0.8em;
+    border-radius: 100%;
+    background-color: var(--color-warning);
+    color: white;
+    position: absolute;
+    top: -5%;
+    right: -5%;
   }
 }
