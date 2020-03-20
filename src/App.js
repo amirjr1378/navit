@@ -70,7 +70,7 @@ function App(props) {
       <Route path="/about-us" component={AboutUs} />
       <Route path="/services-selected" exact component={ServicesSelected} />
       <Route path="/services-selected/taxi" exact component={OrderTaxi} />
-      {/* <Redirect to="/" /> */}
+      <Redirect to="/" />
     </Switch>
   );
 }

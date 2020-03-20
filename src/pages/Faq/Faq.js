@@ -27,6 +27,7 @@ function Header(props) {
       </div>
       <div className="top-searchbox">
         <Search
+          transparent
           type="text"
           name="search"
           placeholder="هر آنچه که میخواهید را جستجو کنید . . ."

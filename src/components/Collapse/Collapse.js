@@ -38,6 +38,7 @@ const Content = function({
   as: Component = "div",
   children,
   className,
+  style,
   ...props
 }) {
   const { collapse } = React.useContext(collapseContext);
@@ -51,7 +52,7 @@ const Content = function({
       className={classnames("collapse__content", {
         [className]: className
       })}
-      style={{ maxHeight }}
+      style={{ maxHeight, ...style }}
       ref={contentRef}
     >
       {ui}

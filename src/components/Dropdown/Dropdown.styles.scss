@@ -7,14 +7,17 @@
     border-radius: 2px;
     display: none;
     flex-direction: column;
-    padding: 1em;
     min-width: 200px;
     position: absolute;
-    & > * {
+    & > span.dropdown__item {
       cursor: pointer;
-      padding: 0.8em;
       &:hover {
         background-color: #eee;
+      }
+
+      & > * {
+        display: block;
+        padding: 0.8em;
       }
     }
   }

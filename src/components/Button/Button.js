@@ -27,7 +27,15 @@ function Button({
         {children}
       </div>
       <div className={classnames("btn__spinner", { hidden: !loading })}>
-        <span className="lnr lnr-sync"></span>
+        <img
+          src="/static/img/spinner.png"
+          srcSet="
+        /static/img/spinner.png, 
+        /static/img/spinner@2x.png 2x,
+        /static/img/spinner@3x.png 3x,
+        "
+          alt="spinner"
+        />
       </div>
     </button>
   );

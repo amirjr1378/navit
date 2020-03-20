@@ -88,6 +88,7 @@ function Content(props) {
           <Facebook />
           <Youtube />
           <Whatsapp />
+          <Instagram />
         </Carousel>
       </div>
       <br />

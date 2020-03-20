@@ -1,30 +1,52 @@
 .search-input__container {
-  font-size: 1rem;
+  font-size: 0.9rem;
   display: flex;
   align-items: center;
-  background: transparent;
-  border: solid 1.5px rgba(255, 255, 255, 0.1);
-  height: 3.5em;
-  line-height: 3.5em;
-  color: white;
+  background-color: white;
+  height: 4em;
+  line-height: 4em;
   padding: 0.7em;
   border-radius: 7px;
+  border: solid 1.5px rgba(0, 0, 0, 0.1);
   @media (max-width: 500px) {
     font-size: 0.8rem;
   }
 
+  &.transparent {
+    border: solid 1.5px rgba(255, 255, 255, 0.1);
+    background-color: transparent;
+    color: white;
+    input {
+      background-color: transparent;
+      font-size: 0.9em;
+      color: white;
+      caret-color: white;
+      &::placeholder {
+        color: white;
+      }
+    }
+    span {
+      color: white;
+    }
+  }
+
   input {
-    background: transparent !important;
     border: 0 !important;
     box-shadow: 0 !important;
     outline: 0 !important;
     padding: 0.2em;
     flex: 1;
     font-size: 1em;
-    caret-color: white;
-    color: white;
+    letter-spacing: -0.2px;
+    color: rgba(0, 0, 0, 0.6);
+    caret-color: rgba(0, 0, 0, 0.6);
     &::placeholder {
-      color: white;
+      color: rgba(0, 0, 0, 0.6);
+      font-weight: 500;
     }
+  }
+  span {
+    color: rgba(0, 0, 0, 0.6);
+    font-size: 1.2em;
   }
 }

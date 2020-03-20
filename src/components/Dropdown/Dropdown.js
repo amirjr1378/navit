@@ -32,7 +32,9 @@ export const Content = React.memo(function({
 }) {
   return (
     <Component className="dropdown__content" {...props}>
-      {children}
+      {React.Children.map(children, child => (
+        <span className="dropdown__item">{child}</span>
+      ))}
     </Component>
   );
 });

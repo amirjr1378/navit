@@ -1,0 +1,21 @@
+.suggestion__container {
+  display: flex;
+  align-items: center;
+  margin-bottom: 0.7em;
+  &:last-child {
+    margin-bottom: 1.4em;
+  }
+  .suggestion__brand {
+    flex: 1;
+  }
+  .suggestion__diffTime {
+    margin-left: 0.8em;
+    letter-spacing: -0.65px;
+    text-align: right;
+    color: rgba(0, 0, 0, 0.6);
+  }
+  .suggestion__price {
+    color: var(--color-warning);
+    font-weight: 800;
+  }
+}
